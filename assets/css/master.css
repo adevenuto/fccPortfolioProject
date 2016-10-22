@@ -1,0 +1,259 @@
+body,html,ul,h1,h2,h3,h4,h5,p,li {
+  margin: 0;
+  padding: 0;
+}
+li {
+  list-style: none;
+}
+h1,h2,h3,h4,h5,ul,li {
+  margin: 0;
+  padding: 0;
+}
+* {
+font-family: 'Quicksand', sans-serif;
+}
+.navbar {
+  position: fixed;
+  z-index: 1000;
+  width: 100%;
+  border-radius: 0 !important;
+  transition: top 250ms ease-in-out;
+  top: 0;
+}
+.navbar-nav {
+    margin: 0px -15px;
+}
+.navbar-default {
+  background-color: rgba(0, 0, 0, 0.2);
+  border-color: rgba(231, 231, 231, 0);
+  border-bottom: 2px solid #d68f30;
+}
+.navbar-brand {
+  font-size: 30px;
+}
+.navbar-default .navbar-brand {
+    color: #fff;
+}
+.navbar-default .navbar-toggle {
+    border-color: rgba(0,0,0,0);
+}
+.navbar-default .navbar-toggle:hover {
+    background-color: rgba(0,0,0,0);
+}
+.navbar-default .navbar-toggle:focus {
+    background-color: rgba(0,0,0,0);
+}
+.navbar-default .navbar-toggle .icon-bar {
+    background-color: #d1d1d1;
+    transition: background-color 200ms ease-in-out;
+}
+.navbar-default .navbar-toggle:hover .icon-bar {
+    background-color: #fff;
+}
+.navbar-default .navbar-brand:hover {
+    color: #fff;
+    background-color: transparent;
+}
+.navbar-default .navbar-nav>li>a {
+    color: #fff;
+}
+.navbar-default .navbar-nav>li>a:hover, .navbar-default .navbar-nav>li>a:focus {
+    color: #fff;
+}
+
+.navbar-nav li:hover {
+    background: #d68f30;
+    transition: background-color 300ms ease-in-out;
+}
+/* ///////////////////////////////////////////////// */
+.box-shadow-bottom {
+  box-shadow: 0px 0px 24px 1px #000;
+}
+.background-img {
+  background-image: url("http://www.publicdomainpictures.net/pictures/160000/velka/ordinateur-de-bureau-pc.jpg");
+  height: 600px;
+  width: 100%;
+  background-size: cover;
+  position: relative;
+  top: 0;
+}
+.margin-top-20 {
+  margin-top: 20px;
+}
+.padding-0 {
+  padding: 0px;
+}
+.selfImageContainer {
+  background-color: #b97316;
+  padding: 3px;
+  width: 80px;
+  border-radius: 50%;
+  border: 1px solid #000;
+  margin: 0 auto;
+}
+.selfImageContainer img {
+  display: block;
+  -webkit-filter: grayscale(100%);
+   filter: grayscale(100%);
+   width: 100%;
+  border-radius: 50%;
+}
+.about {
+  text-align: center;
+  font-size: 2.5em;
+  padding: 5px;
+}
+.link {
+  font-size: 2.3em;
+  color: #000;
+  line-height: 80px;
+}
+.link-github {
+  float: right;
+}
+.link-linkedin {
+  float: left;
+}
+.work-container {
+  width: 30%;
+  margin: 1.667%;
+  height: 200px;
+  background: #666;
+  border: 1px solid #000;
+}
+/* CONTACT FORM */
+.contact-form, #map, .contact-header {
+  background: #d68f30;
+}
+.contact-header {
+  padding: 15px 15px 17px 15px;
+  border-bottom: 1px dotted #fff;
+  margin-top: 20px;
+}
+.contact-header h4 {
+  font-weight: 700;
+}
+.contact-form {
+  height: 260px;
+}
+#map {
+  height: 260px;
+}
+#contact h3 {
+  padding-top: 10px;
+  margin-bottom: 10px;
+}
+#contact .fa-chevron-down {
+  font-size: .8em;
+  color: #fff;
+}
+#contact input, #contact textarea {
+  border-radius: 0;
+  border-color: #000;
+}
+textarea {
+  max-width: 350px;
+  max-height: 100px;
+}
+#contact input[type="text"] {
+  width: 240px;
+}
+#contact input[type="submit"] {
+  background: none;
+  color: #fff;
+  border-color: #fff;
+  transition: all 100ms linear;
+}
+#contact input[type="submit"]:hover {
+  border-color: #000;
+  color: #000;
+  border-radius: 4px;
+}
+/* Footer */
+.footer {
+  background: #000;
+  margin: 20px -15px 0 -15px;
+  border-top: 3px solid #d68f30;
+  color: #fff;
+}
+.fa-heart {
+  color: #f00;
+}
+.footer-social i {
+  color: #ff9200;
+  font-size: 2em;
+  padding: 5px 20px 5px 5px;
+  transition: color 100ms linear;
+}
+.footer-social i:hover {
+  color: #fff;
+  padding: 5px 20px 5px 5px;
+}
+.phone {
+  padding: 15px 20px 5px 5px;
+  font-size: .9em;
+}
+.phone a {
+  text-decoration: none;
+  color: #fff;
+}
+.fa-phone {
+  color: #0f0;
+}
+#footer-nav {
+  list-style: none;
+  color: #000;
+  font-size: 1.5em;
+  color: #fff;
+  padding: 5px 0;
+}
+#footer-nav a {
+  color: #d67a00;
+  border-bottom: 1px solid #fff;
+  text-decoration: none;
+  padding-bottom: 1px;
+  transition: border-bottom 50ms linear;
+}
+#footer-nav a:hover {
+  border-color: #000;
+}
+.copyright {
+  color: #666666;
+}
+.footer-bottom {
+  padding-top: 20px;
+  padding-bottom: 5px;
+  font-size: 10px;
+}
+
+@media (min-width: 768px) {
+  .navbar-nav li a {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    font-size: 1.4em;
+  }
+  .navbar-brand {
+    padding-top: 30px;
+  }
+  .hide-header {
+    top: -100px;
+  }
+  .show-header {
+    top: 0;
+  }
+}
+@media (max-width: 767px) {
+  .navbar-brand {
+    font-size: 22px;
+  }
+  .navbar-default {
+    background-color: rgba(0, 0, 0, 0.7);
+  }
+  .work-container {
+    width: 65%;
+    position: relative;
+    left: 50%;
+    margin-left: -32.5%;
+    margin-bottom: 15px;
+  }
+}
