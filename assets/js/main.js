@@ -22,10 +22,17 @@ $(function(){
       } else {
         $('html, body').stop().animate({
           scrollTop: 0
-        }, 1000);
+        }, 800);
       }
     }
   });
+  // $(window).scroll(function(){
+  //     var scroll = $(this).scrollTop();
+  //     console.log(scroll)
+  //     $('.background-img-back').css({
+  //       'transform' : 'translate(0px, -'+ scroll /15 +'%)'
+  //     })
+  // })
 })
 
 
