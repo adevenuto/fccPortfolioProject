@@ -293,11 +293,4 @@ textarea {
   .navbar-default {
     background-color: rgba(0, 0, 0, 0.7);
   }
-  .work-container {
-    width: 65%;
-    position: relative;
-    left: 50%;
-    margin-left: -32.5%;
-    margin-bottom: 15px;
-  }
 }
