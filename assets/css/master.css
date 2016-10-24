@@ -137,19 +137,21 @@ a.thumbnail:hover {
   border: 1px solid #000;
 }
 #work a {
-  color: #fff;
-  font-size: 1.3em;
+  color: #ff9200;
+  font-size: 1.5em;
+  text-shadow: 1px 1px #000;
   transition: color 150ms linear;
 }
 #work a:hover {
   color: #000;
-  font-size: 1.3em;
+  text-shadow: 1px 1px #000;
 }
 #work .thumbnail {
   border: 1px solid #000;
-  background-color: #ff9200;
+  background-color: #f3f3f3;
   margin-bottom: 5px;
   border-radius: 0px;
+  box-shadow: 0px 0px 9px -3px #000;
 }
 #work li {
   float: left;
@@ -161,9 +163,33 @@ a.thumbnail:hover {
 #work ul {
   display: inline-block;
 }
+#work {
+  border-top: 2px solid #000;
+  padding-top: 60px;
+  margin-top: 60px;
+  position: relative;
+}
+#work:before {
+  content: 'Work';
+  position: absolute;
+  top: -27px;
+  left: 50%;
+  margin-left: -60px;
+  width: 120px;
+  color: #ff9200;
+  height: 30px;
+  border: 2px solid #000;
+  font-size: 2.5em;
+  text-align: center;
+  background: #fff;
+}
 .work-container {
   margin-bottom: 20px;
 }
+
+
+
+
 /* CONTACT FORM */
 .contact-form, #map, .contact-header {
   background: #ff9200;
