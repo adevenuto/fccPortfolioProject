@@ -1,5 +1,5 @@
 $(function(){
-  // header fade up/down on scroll controls
+  // Header fade up/down on scroll controls
   var hideHeader = 100;
   var showHeader = 99;
   var $this = $('.navbar');
@@ -10,14 +10,14 @@ $(function(){
       $this.addClass('show-header').removeClass('hide-header');
     }
   });
-  // scroll to section on page
+  // Scroll to section on page
   $('a[href^="#"]').on('click', function(event) {
     var target = $(this.getAttribute('href'));
     if(target) {
       event.preventDefault();
       if (target[0].id != 'top') {
         $('html, body').stop().animate({
-          scrollTop: target.offset().top - 77
+          scrollTop: target.offset().top - 85
         }, 1000);
       } else {
         $('html, body').stop().animate({
@@ -26,16 +26,10 @@ $(function(){
       }
     }
   });
+  // Automatically close Bootstrap Nav
   $('.navbar-collapse a').click(function(){
     $(".navbar-collapse").collapse('hide');
   });
-  // $(window).scroll(function(){
-  //     var scroll = $(this).scrollTop();
-  //     console.log(scroll)
-  //     $('.background-img-back').css({
-  //       'transform' : 'translate(0px, -'+ scroll /15 +'%)'
-  //     })
-  // })
 })
 
 
