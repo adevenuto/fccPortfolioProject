@@ -17,7 +17,7 @@ $(function(){
       event.preventDefault();
       if (target[0].id != 'top') {
         $('html, body').stop().animate({
-          scrollTop: target.offset().top - 75
+          scrollTop: target.offset().top - 77
         }, 1000);
       } else {
         $('html, body').stop().animate({

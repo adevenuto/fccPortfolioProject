@@ -79,16 +79,6 @@ font-family: 'Abel', sans-serif;
   position: relative;
   top: 0;
 }
-.background-img-back {
-  background-image: url("../img/bannerImg-code.png");
-  height: 600px;
-  width: 100%;
-  background-size: cover;
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: -1;
-}
 .margin-top-20 {
   margin-top: 20px;
 }
@@ -112,8 +102,10 @@ font-family: 'Abel', sans-serif;
 }
 .about {
   text-align: center;
-  font-size: 2.5em;
-  padding: 5px;
+  font-size: 2em;
+  font-weight: 700;
+  padding: 15px;
+  letter-spacing: 1px;
 }
 .link {
   font-size: 2.3em;
@@ -131,6 +123,15 @@ a.thumbnail:hover {
   border-color: #000;
   text-decoration: none;
   cursor: pointer;
+}
+#divider {
+  width: 100%;
+  border-top: 2px solid #000;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  margin-left: -50%;
+  z-index: -1;
 }
 #work img {
   border-radius: 0px;
@@ -165,7 +166,7 @@ a.thumbnail:hover {
   display: inline-block;
 }
 #work {
-  border-top: 2px solid #000;
+  /*border-top: 2px solid #000;*/
   padding-top: 60px;
   margin-top: 60px;
   position: relative;
@@ -188,23 +189,20 @@ a.thumbnail:hover {
   margin-bottom: 20px;
 }
 
-
-
-
 /* CONTACT FORM */
-.contact-form, #map, .contact-header {
+#contact-form-body, #contact-header {
   background: #ff9200;
 }
-.contact-header {
+#contact-header {
   padding: 15px 15px 17px 15px;
   border-bottom: 1px dotted #fff;
   margin-top: 20px;
 }
-.contact-header h4 {
+#contact-header h4 {
   font-weight: 700;
 }
-.contact-form {
-  height: 260px;
+#contact-form-body {
+  overflow: hidden;
 }
 #map {
   height: 260px;
@@ -242,7 +240,7 @@ textarea {
 /* Footer */
 .footer {
   background: #000;
-  margin: 20px -15px 0 -15px;
+  margin-top: 20px;
   border-top: 3px solid #d68f30;
   color: #fff;
 }
@@ -293,8 +291,10 @@ textarea {
 }
 .footer-bottom {
   padding-top: 20px;
-  padding-bottom: 5px;
+  padding-bottom: 7px;
   font-size: 11px;
+  float: left;
+  width: 100%;
 }
 
 @media (min-width: 768px) {
@@ -319,5 +319,14 @@ textarea {
   }
   .navbar-default {
     background-color: rgba(0, 0, 0, 0.7);
+  }
+  .about {
+    font-size: 1.5em;
+  }
+  #divider {
+    width: 95%;
+    position: absolute;
+    left: 50%;
+    margin-left: -47.5%;
   }
 }
