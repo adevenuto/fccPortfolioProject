@@ -17,7 +17,7 @@ $(function(){
       event.preventDefault();
       if (target[0].id != 'top') {
         $('html, body').stop().animate({
-          scrollTop: target.offset().top
+          scrollTop: target.offset().top - 75
         }, 1000);
       } else {
         $('html, body').stop().animate({
@@ -25,6 +25,9 @@ $(function(){
         }, 800);
       }
     }
+  });
+  $('.navbar-collapse a').click(function(){
+    $(".navbar-collapse").collapse('hide');
   });
   // $(window).scroll(function(){
   //     var scroll = $(this).scrollTop();
