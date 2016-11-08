@@ -65,7 +65,7 @@
               <a href="#"><i class="fa fa-linkedin-square link link-linkedin"></i></a>
           </div>
           <div class="about col-xs-12">
-            I'm a hard-working, self-motivated, problem-solving web-developer. I began learning to program roughly 2 years ago, since then I have fallen in love with the process of learning new technologies, debugging, and building beautiful websites and applications. I'm currently available for full-time work or freelance opportunities. If I'm not coding you will most likely find me spending time with my family, golfing, watching the science channel, or working in the back yard.
+            I'm a hard-working, self-motivated, problem-solving web-developer. I began learning to program about 2 years ago, since then I have fallen in love with the process of learning new technologies, debugging, and building beautiful  user-friendly websites and applications. I'm currently available for full-time work or freelance opportunities. If I'm not coding you will find me spending time with my family, golfing, watching the science channel, or working in the back yard.
           </div>
         </div>
       </div>
@@ -75,7 +75,7 @@
       <div class="row">
         <div id="divider"></div>
           <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 work-container">
-              <a href="http://cfs.mydevdemo.us/" class="thumbnail"><img src="assets/img/cfs.png" class="img-responsive item-img">Cornerstone Furnished Solutions</a>
+              <a href="http://www.cornerstonefurnishedsolutions.com/" class="thumbnail"><img src="assets/img/cfs.png" class="img-responsive item-img">Cornerstone Furnished Solutions</a>
               <ul>
                   <li>Custom WP Theme</li>
                   <li>jQuery</li>
@@ -84,11 +84,12 @@
               </ul>
           </div>
           <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 work-container">
-              <a href="https://adevenuto.github.io/rgbcolorgame/" class="thumbnail"><img src="assets/img/color-game.png" class="img-responsive item-img">RGB Color Game</a>
+              <a href="https://adevenuto.github.io/RandomQuotes/" class="thumbnail"><img src="assets/img/random-quote.png" class="img-responsive item-img">Random Quote Machine</a>
               <ul>
-                  <li>JavaScript</li>
+                  <li>jQuery</li>
                   <li>HTML</li>
                   <li>CSS</li>
+                  <li>API</li>
               </ul>
           </div>
           <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 work-container">
@@ -102,7 +103,7 @@
               </ul>
           </div>
           <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 work-container">
-              <a href="#" class="thumbnail"><img src="http://placehold.it/640x480" class="img-responsive item-img">Comming Soon...</a>
+              <a href="#" class="thumbnail"><img src="http://placehold.it/640x480" class="img-responsive item-img">Coming Soon...</a>
               <ul>
                   <li>WordPress</li>
                   <li>jQuery</li>
@@ -111,7 +112,7 @@
               </ul>
           </div>
           <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 work-container">
-              <a href="#" class="thumbnail"><img src="http://placehold.it/640x480" class="img-responsive item-img">Comming Soon...</a>
+              <a href="#" class="thumbnail"><img src="http://placehold.it/640x480" class="img-responsive item-img">Coming Soon...</a>
               <ul>
                   <li>WordPress</li>
                   <li>jQuery</li>
@@ -120,7 +121,7 @@
               </ul>
           </div>
           <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 work-container">
-              <a href="#" class="thumbnail"><img src="http://placehold.it/640x480" class="img-responsive item-img">Comming Soon...</a>
+              <a href="#" class="thumbnail"><img src="http://placehold.it/640x480" class="img-responsive item-img">Coming Soon...</a>
               <ul>
                   <li>WordPress</li>
                   <li>jQuery</li>
@@ -141,17 +142,19 @@
           <div id="contact-form-body">
             <div class="col-sm-6">
               <h3>General Inquiry  <i class="fa fa-chevron-down"></i></h3>
-              <form action="" method="POST">
+              <!-- CONTACT FORM -->
+              <form id="contact-form" action="contact.php" method="POST" role="form">
+                <div class="messages"></div> <!-- CONTACT FORM MESSAGES -->
                 <div class="form-group">
-                   <input id="form_name" type="text" name="name" class="form-control" required="required" placeholder="Name" data-error="Firstname is required.">
+                   <input id="form_name" type="text" name="name" class="form-control" required="required" placeholder="Name" data-error="Name is required.">
                    <div class="help-block with-errors"></div>
                 </div>
                 <div class="form-group">
-                   <input id="form_name" type="text" name="name" class="form-control" required="required" placeholder="Email" data-error="Firstname is required.">
+                   <input id="form_name" type="email" name="email" class="form-control" required="required" placeholder="Email" data-error="Email is required.">
                    <div class="help-block with-errors"></div>
                 </div>
                 <div class="form-group">
-                   <textarea id="form_message" name="message" class="form-control" required="required" placeholder="Message" data-error="Please,leave us a message."></textarea>
+                   <textarea id="form_message" name="message" class="form-control" required="required" placeholder="Message" data-error="Please, leave me a message."></textarea>
                    <div class="help-block with-errors"></div>
                 </div>
                 <div class="form-group">
@@ -201,6 +204,8 @@
     <script type="text/javascript" src="assets/js/jquery-3.1.0.min.js"></script>
     <script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="assets/js/main.js"></script>
+    <script type="text/javascript" src="assets/js/validator.js"></script>
+    <script type="text/javascript" src="assets/js/contact.js"></script>
   </body>
 </html>
 

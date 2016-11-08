@@ -221,7 +221,7 @@ textarea {
   max-width: 350px;
   max-height: 100px;
 }
-#contact input[type="text"] {
+#contact input[type="text"], input[type="email"] {
   width: 240px;
 }
 #contact input[type="submit"] {
