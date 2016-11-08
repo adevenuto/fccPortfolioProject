@@ -1,7 +1,7 @@
 <?php
 
 // configure
-$from = 'Demo contact form <anthonydevenuto.com>';
+$from = 'Protfolio Request <anthonydevenuto.com>';
 $sendTo = 'Demo contact form <anthonydevenuto@gmail.com>';
 $subject = 'New message from portfolio website';
 $fields = array('name' => 'Name', 'email' => 'Email', 'message' => 'Message'); // array variable name => Text to appear in email
