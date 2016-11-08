@@ -1,3 +1,3 @@
 
 ### My personal porfolio
-[Anthony Devenuto](https://www.anthonydevenuto.com)
+[Anthony Devenuto](http://www.anthonydevenuto.com)
