@@ -1,15 +1,21 @@
 $(function(){
-  // Header fade up/down on scroll controls
-  var hideHeader = 100;
-  var showHeader = 99;
-  var $this = $('.navbar');
-  $(window).on("scroll", function() {
-  if ($(window).scrollTop() >= hideHeader) {
-      $this.addClass('hide-header').removeClass('show-header');
-    } else if ($(window).scrollTop() <= showHeader) {
-      $this.addClass('show-header').removeClass('hide-header');
+  $(document).on('scroll', function(){
+    var top = window.pageYOffset || document.documentElement.scrollTop;
+    var navChange = 100;
+    if (top >= navChange) {
+      console.log(top)
+      $('.navbar-brand').addClass('transparent');
+      $('.navbar-default').addClass('darken');
+      $('.nav-anchor').addClass('wht');
+      return false;
+    } else if(top < navChange) {
+      console.log(top)
+      $('.navbar-brand').removeClass('transparent');
+      $('.navbar-default').removeClass('darken');
+      $('.nav-anchor').removeClass('wht');
+      return false;
     }
-  });
+  })
   // Scroll to section on page
   $('a[href^="#"]').on('click', function(event) {
     var target = $(this.getAttribute('href'));
