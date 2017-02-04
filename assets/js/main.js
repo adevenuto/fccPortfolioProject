@@ -2,6 +2,7 @@ $(function(){
   $(document).on('scroll', function(){
     var top = window.pageYOffset || document.documentElement.scrollTop;
     var navChange = 100;
+    $('.hero-img').css('top',top/3+'px');
     if (top >= navChange) {
       console.log(top)
       $('.navbar-brand').addClass('transparent');
@@ -15,7 +16,14 @@ $(function(){
       $('.nav-anchor').removeClass('wht');
       return false;
     }
+
+
   })
+
+
+
+
+
   // Scroll to section on page
   $('a[href^="#"]').on('click', function(event) {
     var target = $(this.getAttribute('href'));

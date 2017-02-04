@@ -71,16 +71,19 @@ li {
 }
 .banner {
   position: relative;
+  overflow: hidden;
   border-bottom: 2px solid #0051ce;
 }
 .hero-img {
-  opacity: 0;
-  -webkit-animation: fade-in 750ms ease-in-out forwards;
-          animation: fade-in 750ms ease-in-out forwards;
+  position: relative;
+  top: 0;
+  opacity: 1;
+/*  -webkit-animation: fade-in 750ms ease-in-out forwards;
+          animation: fade-in 750ms ease-in-out forwards;*/
 }
 .banner-quotes {
   position: absolute;
-  bottom: -20px;
+  top: -120px;
   text-transform: uppercase;
   letter-spacing: 3px;
   border: 2px solid #0051ce;
@@ -92,7 +95,7 @@ li {
   color: rgb(252, 253, 254);
   background: rgb(53, 54, 55);
   white-space: nowrap;
-  z-index: 1;
+  z-index: 20;
 }
 /* SKILLS SECTION */
 .skills {
@@ -111,6 +114,16 @@ li {
   font-size: 2.3rem;
   white-space: nowrap;
   background: #515151;
+}
+.arrows {
+  position: absolute;
+  top: -65px;
+  font-size: 3.7rem;
+  color: #c5c5c5;
+  left: 50%;
+  transform: translate(-50%, 0);
+  animation: arrow-loop 900ms ease-in-out;
+  animation-iteration-count:infinite;
 }
 .skills h3, h2 {
   text-transform: uppercase;
@@ -171,6 +184,7 @@ li {
 .sass {
   animation: sass-level 550ms cubic-bezier( 0.06, 0.45, 0.45, 1.1) forwards;
 }
+
 
 
 
@@ -468,6 +482,10 @@ textarea {
 @keyframes sass-level {
   0% {width: 0;}
   100% {width: 70%;}
+}
+@keyframes arrow-loop {
+  0% {top: -65px;}
+  100% {top: -60px;}
 }
 
 
