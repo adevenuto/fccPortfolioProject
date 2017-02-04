@@ -81,6 +81,13 @@ li {
 /*  -webkit-animation: fade-in 750ms ease-in-out forwards;
           animation: fade-in 750ms ease-in-out forwards;*/
 }
+/* SKILLS SECTION */
+.skills {
+  background: url('../img/ocean.jpg');
+  width: 100%;
+  position: relative;
+  padding-top: 100px;
+}
 .banner-quotes {
   position: absolute;
   top: -120px;
@@ -96,13 +103,6 @@ li {
   background: rgb(53, 54, 55);
   white-space: nowrap;
   z-index: 20;
-}
-/* SKILLS SECTION */
-.skills {
-  background: url('../img/ocean.jpg');
-  width: 100%;
-  position: relative;
-  padding-top: 100px;
 }
 .skills h2 {
   position: absolute;
